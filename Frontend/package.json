@@ -1,0 +1,91 @@
+{
+  "name": "argon-design-system-react",
+  "version": "1.1.0",
+  "description": "React version of Argon Design System by Creative Tim",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "argon",
+    "argon-react",
+    "design",
+    "design-react",
+    "argon-design",
+    "argon-design-react",
+    "kit",
+    "react-kit",
+    "argon-design-system",
+    "argon-design-system-react",
+    "design-system-react"
+  ],
+  "author": "Creative Tim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
+  },
+  "homepage": "https://demos.creative-tim.com/argon-design-system-react/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp licenses",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"./src/**/*.{js,jsx}\" ./src --fix",
+    "dev": "webpack serve",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css",
+    "minify-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css --source-map true"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
+    "axios": "^0.27.2",
+    "babel-loader": "^8.2.5",
+    "bootstrap": "4.3.1",
+    "classnames": "2.2.6",
+    "firebase": "^9.8.1",
+    "headroom.js": "0.11.0",
+    "html-webpack-plugin": "^5.5.0",
+    "moment": "2.24.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "node-sass": "^7.0.1",
+    "nouislider": "14.1.1",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "react": "^17.0.2",
+    "react-datetime": "2.16.3",
+    "react-dom": "^17.0.2",
+    "react-router": "5.1.2",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "5.0.1",
+    "reactstrap": "8.4.1",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "3.39.2",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.9.19",
+    "eslint": "^7.11.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-flowtype": "3.13.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "jquery": "3.4.1",
+    "typescript": "3.7.5"
+  }
+}
